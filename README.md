@@ -1,4 +1,4 @@
-# Notas de aula de 2026.1.FIXME - Python FIXME
+# Notas de aula de 2026.1.11 - Python - Listas
 
 ## Informações gerais
 
@@ -8,9 +8,17 @@
   1. FIXME
 
 ---
-## Notas de aula [slides pdf](FIXME)
+## Notas de aula 
+Resumo da [parte 1](./14-Listas-parte_1.pdf)
+1. FIXME
+
+Resumo da [parte 2](/14-Listas-parte_2.pdf)
 1. FIXME
 
 ---
-## Exercícios [Lista de exercícios](/lista.md) FIXME
+## Exercícios [Lista de exercícios](/lista.md)
+**Parte 1**
+1. FIXME
+
+**Parte 1**
 1. FIXME
