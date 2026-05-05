@@ -9,16 +9,195 @@
 
 ---
 ## Notas de aula 
-Resumo da [parte 1](./14-Listas-parte_1.pdf)
+### Resumo da [parte 1](./14-Listas-parte_1.pdf)
+1. Lista ou vetor
+   - Uma lista é um tipo de objeto capaz de armazenar múltiplos valores.
+   - Cada valor armazenado pela lista é chamado de elemento, os quais podem ser de qualquer tipo.
+   - O tamanho de uma lista é igual à sua quantidade de elementos, o qual pode ser obtido por meio da função len.
+2. Índice de listas
+   - Os itens (elementos) da lista podem ser acessador individualmente através do seu índice.
+   - O índice deve ser um valor inteiro. Consequentemente, variáveis inteiras e valores negativos podem ser utilizados como índices.
+   - Índices com valores fora do intervalo geram um erro do tipo IndexError. O intervalo é igual `[-tamanho, (tamanho - 1)]`.
+3. Operações na lista
+   1. Inserir item
+      - `append` adiciona item no final da lista
+      - `insert` adiciona item no início da lista
+   2. Criar lista com valor repetido
+      - `*` para criar uma lista com o mesmo valor em todas as suas posições. Ex: `[1] * 5 # cria uma lista com 5 itens com valor 1`
+   3. Copiar lista
+      - `lista.copy()` cria uma nova lista com valores idênticos.
+   4. Função contém valor `in`
+      - `in` verifica se uma lista contém um valor específico. Ex: `valor in lista`.
+   5. Inverter lista
+      - `lista[::-1]`: cria uma cópia de `lista` com a ordem invertida dos itens. Também aplica a textos.
+      - `list(reversed(lista))`: cria uma cópia de `lista` com a ordem invertida dos itens. Com adaptação, também aplica a textos.
+      - `lista.reverse()`: inverte a ordem dos itens da `lista`.
+2. Instrução `for`
+   - Assim como os textos, a instrução `for` pode ser usada para iterar os elementos de uma lista.
+
+### Resumo da [parte 2](/14-Listas-parte_2.pdf)
 1. FIXME
 
-Resumo da [parte 2](/14-Listas-parte_2.pdf)
-1. FIXME
+### Exemplo de código em python
 
+Exemplo de lista e do uso da função `len`.
+```python
+a = [1, 2, 3, 4]
+b = ['A', 5, 3.8]
+c = []
+print(len(a)) # 4
+print(len(b)) # 3
+print(len(c)) # 0
+```
+
+Exemplo de `for` para iterar listas e textos.
+```python
+numeros = [1, 2, 3, 4]
+for item in numeros:
+   print(item)
+
+texto = "isso é um texto"
+for letra in texto:
+   print(letra)
+```
+
+Acessando itens da lista com índice.
+```python
+a = ['x', 'y', 'z', 'w']
+print(a[0]) # x
+print(a[1]) # y
+print(a[2]) # z
+b = a[3]
+print(b)    # w
+```
+
+Exemplo de soma de números (itens) de uma lista.
+```python
+### definindo a lista
+numeros = [2, 4, 6]
+
+### solução com while e índices
+soma = 0
+indice = 0
+while indice < len(numeros):
+  soma = soma + numeros[indice]
+  indice = indice + 1
+print(soma)
+
+### solução com for e índices
+soma = 0
+for indice in range(len(numeros)):
+  soma = soma + numeros[indice]
+print(soma)
+
+### solução com for sem índices
+soma = 0
+for numero in numeros:
+  soma = soma + numero
+print(soma)
+```
+
+Imprimindo os elementos de uma lista em ordem inversa.
+```python
+### definindo a lista
+lista = ['x', 'y', 'z', 'w']
+
+### solução com while
+tamanho = len(lista) * -1
+indice = -1
+while indice >= tamanho:
+  print(lista[indice])
+  indice = indice - 1
+
+# solução com for e range
+tamanho = len(lista) * -1
+for indice in range(-1, tamanho - 1, -1):
+  print(s[indice])
+
+``` 
+
+Operações com lista
+```python
+# definir a lista
+lista = ['A', 'B', 'C']
+
+### adicionar no final
+lista.append('D')
+print(lista)            # ['A', 'B', 'C', 'D']
+
+### adicionar no início
+a.insert(0, '*')
+print(lista)            # ['*', 'A', 'B', 'C', 'D']
+
+### adicionar no início
+a.insert(2, '*')
+print(lista)            # ['*', 'A', '*', 'B', 'C', 'D']
+
+### criar lista com valor repetido
+lista_a = [0] * 5
+print(lista_a)     	  # [0, 0, 0, 0, 0]
+lista_b = [None] * 4  # None representa um valor vazio
+print(lista_b)        # [None, None, None, None]
+
+### copiar listas
+lista_a = ['x', 'y', 'z']
+lista_b = lista_a
+lista_c = lista_a.copy()
+lista_b[0] = 'W'    # modifica o valor nas listas a e b
+print(lista_a)    # ['W', 'y', 'z']
+print(lista_b)    # ['W', 'y', 'z']
+print(lista_c)    # ['x', 'y', 'z']
+
+### verificar se valor existe em lista
+lista_a = [10, 20, 30]
+numero = 30
+print(5 in lista_a)       # False
+print(20 in lista_a)      # True
+print(numero in lista_a)  # True
+
+### inverter a ordem dos itens numa lista
+### inverter com cópia
+nova_lista = lista[::-1]  # fatiamento (slicing) do python
+print(nova_lista)  # Saída: ['C', 'B', 'A']
+print(lista)       # Saída: ['A', 'B', 'C']
+
+nova_lista = list(reversed(lista)) # usando funções de python
+print(nova_lista)  # Saída: ['C', 'B', 'A']
+print(lista)       # Saída: ['A', 'B', 'C']
+
+### inverter a própria lista
+lista.reverse()
+print(lista)  # Saída: ['C', 'B', 'A']
+
+### definindo um texto
+texto = 'isso é um texto'
+### inverter com fatiamento (slicing)
+texto_invertido = texto[::-1]
+print(texto)            # saída: 'isso é um texto'
+print(texto_invertido)  # saída: 'otxet mu é ossi'
+### inverter com funções
+texto_invertido = ''.join(list(reversed(texto)))
+print(texto)            # saída: 'isso é um texto'
+print(texto_invertido)  # saída: 'otxet mu é ossi'
+```
 ---
 ## Exercícios [Lista de exercícios](/lista.md)
-**Parte 1**
-1. FIXME
+### **Parte 1**
+1. Qual é a saída (impressão) do programa abaixo?
 
-**Parte 1**
+```python
+L = [51, 8, 31, 11, 1, 56]
+i = 2
+print(L[0])
+print(L[3])
+print(L[i])
+print(L[i + 1])
+print(L[-1])
+print(L[-3])
+print(L[-i])
+print(L[L[4]])
+print(L[2] - L[-4])
+```
+
+### **Parte 1**
 1. FIXME
