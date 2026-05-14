@@ -199,5 +199,98 @@ print(L[L[4]])
 print(L[2] - L[-4])
 ```
 
+2. Qual é a saída (impressão) do programa abaixo?
+
+```python
+ls = [3, 5, 2]
+s = 0
+for v in ls:
+  s = s + v
+print(s)
+```
+
+3. Qual é a saída (impressão) do programa abaixo?
+
+```python
+n = 6
+ls = [0] * n
+for i in range(n):
+  ls[i] = i * 2
+print(ls)
+```
+
+4. Qual é a saída (impressão) do programa abaixo?
+
+```python
+n = 5
+ls = []
+for i in range(n):
+  ls.append(1)
+ls[0] = 5
+ls[3] = -3
+print(ls)
+```
+
+5. Qual é a saída (impressão) do programa abaixo?
+
+```python
+la = ['A', 'B', 'C']
+lb = [4, 2, 3]
+for i in range(len(la)):
+  print(la[i] * lb[i])
+```
+
+6. Escreva uma função que tem uma lista como parâmetro e que retorna a soma dos elementos dessa lista. Escreva pelo menos dois testes da função no programa principal. Use estrutura de laços para percorrer os itens da lista. **Não use a função `sum`**.
+
+| Exemplo de lista | Retorno esperado |
+| ---------------- | ---------------- |
+| [2, 5, 3]        | 10               |
+| [1, 0, 9, 1, 5]  | 16               |
+
+7. Escreva uma função que tem uma lista como parâmetro e que retorna a média aritmética dos elementos dessa lista. Escreva pelo menos dois testes da função no programa principal.
+
+| Exemplo de lista | Retorno esperado |
+| ---------------- | ---------------- |
+| [4, 5, 3]        | 4.0              |
+| [1, 0, 9, 1, 5]  | 3.2              |
+
+
+8. Escreva uma função que tem uma lista como parâmetro e que retorna a soma dos elementos divisíveis por 3. Escreva pelo menos dois testes da função no programa principal.
+
+| Exemplo de lista  | Retorno esperado |
+| ----------------- | ---------------- |
+| [0, 6, -1, 12, 1] | 18.0             |
+| [0, 1, -1, 8]     | 0.0              |
+
+9. Escreva uma função que tem uma lista como parâmetro e que retorna uma nova lista contendo os elementos da primeira lista que são divisíveis por 5. Escreva pelo menos dois testes da função no programa principal.
+
+| Exemplo de lista  | Retorno esperado |
+| ----------------- | ---------------- |
+| [1, 1, 10, 15, 9] | [10, 15]         |
+| [9, 1, -1, 8]     | []               |
+
+10. Escreva uma função que tem uma lista como parâmetro e que imprime os elementos pares dessa lista com seus respectivos índices. Escreva pelo menos dois testes da função no programa principal.
+
+| Exemplo de lista      | Retorno esperado |
+| --------------------- | ---------------- |
+| [2, 1, -1, 8]         |  |
+| [3, 1, -1, 5, 9, 13]  |  |
+
+11. Escreva uma função que tem uma lista A como parâmetro e que retorna uma nova lista formada pelos dobros dos elementos de A. Escreva pelo menos dois testes da função no programa principal.
+
+| Exemplo de lista | Retorno esperado |
+| ---------------- | ---------------- |
+| [2, 1, -1, 8]         | [4, 2, -2, 16]        |
+| [3, 1, -1, 5, 9, 13]  | [6, 2, -2, 10, 18,26] |
+
+12. Escreva uma função que tem duas listas A e B como parâmetros e que retorna uma nova lista contendo os elementos presentes tanto em A como em B (interseção). Escreva pelo menos três testes da função no programa principal.
+
+| Exemplo de lista | Retorno esperado |
+| ---------------- | ---------------- |
+| [2, 1, -1, 8]<br />[0, 2, 5, 6, 9, 1, 3]        | [2, 1] |
+| [3, 1, -1, 5, 9, 13]<br />[0, 1, 5, 4, 5, 6, 5] | [1, 5] |
+| [2, 4, 6, 8, 10]<br />[1, 3, 5]                 | []     |
+
+
 ### **Parte 1**
 1. FIXME
