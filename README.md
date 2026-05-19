@@ -36,7 +36,25 @@
    - Assim como os textos, a instrução `for` pode ser usada para iterar os elementos de uma lista.
 
 ### Resumo da [parte 2](/14-Listas-parte_2.pdf)
-1. FIXME
+1. Fatiamento (slicing)
+   - É um recurso que permite usar índices para copiar uma lista inteira ou uma sublista
+   - O fatiamento é usado com o operador de dois pontos, o qual recebe o índice inicial (incluído) e o índice final (excluído) do intervalo cujos elementos serão copiados
+   - O recurso de fatiamento trabalha com passo (step), cujo valor padrão é igual a 1
+2. Copiando uma lista com fatiamento `copia = lista[:]`
+3. Coparação de listas com o operador `==`
+   - O resultado é verdadeiro apenas quando as duas listas possuem a mesma sequência de elementos.
+4. Funções
+   - `enumerate(lista)` : para cada elemento na lista, gera uma tupla com índice e elemento. É útil quando precisamos percorrer uma lista e ter acesso aos índices.
+   - `lista.index(valor)` : retorna o índice da primeira ocorrência de `valor` na `lista`
+   - `lista.count(valor)` : retorna a quantidade de ocorrências de `valor` na `lista`
+   - `lista.extend(outra_lista)` : adiciona, na lista em que o método é chamado, os elementos de uma outra lista
+   - `lista.pop(indice)` : remove o elemento presente no índice indicado
+   - `lista.remove(valor)` : remove a primeira ocorrência do elemento indicado
+   - `lista.clear()` : remove todos os elementos da lista
+   - `lista.reverse()` : inverte a sequência de elementos da lista
+   - `reversed(lista)` : cria uma nova lista invertendo a sequência de elementos da lista
+   - `lista.sort(reverse=Boolean)` : ordena a sequência de elementos da lista
+
 
 ### Exemplo de código em python
 
@@ -181,6 +199,133 @@ print(texto)            # saída: 'isso é um texto'
 print(texto_invertido)  # saída: 'otxet mu é ossi'
 ```
 
+**fatiamento**
+```python
+a = [10, 20, 30, 40, 50, 60, 70]
+b = a[2:5]
+print(b) # [30, 40, 50]
+# omitir o primeiro índice significa índice zero
+print(a[0:3])  # [10, 20, 30]
+print(a[:3])   # [10, 20, 30]
+# omitir o segundo índice significa índice final
+print(a[5:7])  # [60, 70]
+print(a[5:])   # [60, 70]
+# copiando a lista inteira
+b = a[:]
+print(b) # [10, 20, 30, 40, 50, 60, 70]
+
+## Usando passo
+# passo 2
+print(a[0:5:2]) # [10, 30, 50]
+print(a[::2])   # [10, 30, 50, 70]
+# passo 3
+print(a[0:4:3]) # [10, 40]
+# a omissão do passo funciona como passo 1
+print(a[1:3])   # [20, 30]
+print(a[1:3:])  # [20, 30]
+# passo negativo
+print(a[4:0:-1]) # [50, 40, 30, 20]
+print(a[6:1:-2]) # [70, 50, 30]
+# sublista vazia
+print(a[6:1])	  # []
+print(a[1:5:-2]) # []
+
+# índice negativo
+print(a[-6:-3])    # [20, 30, 40]
+print(a[0:-1])     # [10, 20, 30, 40, 50, 60]
+print(a[-7:-2:2])  # [10, 30, 50]
+print(a[-3:-6])    # []
+# revertendo a lista
+print(a[::-1])   # [70, 60, 50, 40, 30, 20, 10]
+
+```
+
+**copiando lista com fatiamento**
+```python
+a = ['x', 'y', 'z']
+b = a
+c = a[:]
+b[0] = 'W' # a e b operam sobre a mesma lista
+print(a)   # ['W', 'y', 'z']
+print(b)   # ['W', 'y', 'z']
+print(c)   # ['x', 'y', 'z']
+```
+
+**comparando listas com `==`**
+
+```python
+a = [5, 7, 9]
+b = [2, 4, 6]
+c = [5, 7, 9]
+d = ['5', '7', '9']
+e = [5, 9, 7]
+f = [5, 7, 9, 1]
+print(a == a)  # True
+print(a == b)  # False
+print(a == c)  # True
+print(a == d)  # False
+print(a == e)  # False
+print(a == f)  # False
+```
+
+**funções de listas**
+```python
+lista = [10, 20, 30, 40, 10]
+
+# for sem enumerate
+for i in range(len(lista)):
+  print(f'lista[{i}] = {lista[i]}')
+
+# for com enumerate
+for i, item in enumerate(lista):
+  print(f'a[{i}] = {item}')
+
+# primeira ocorência de um valor
+print(lista.index(30)) # 2
+print(lista.index(10)) # 0
+print(lista.index(100)) # gera erro
+
+# count para contar a ocorrência de elementos
+print(lista.count(10))  # 2
+print(lista.count(20))  # 1
+print(lista.count(100)) # 0
+
+# extend para adicionar lista no final
+lista_b = [35, 4, 9]
+print(lista)        # [10, 20, 30, 40, 10]
+print(lista_b)      # [35, 4, 9]
+lista.extend(lista_b)
+print(lista)        # [10, 20, 30, 40, 10, 35, 4, 9]
+print(lista_b)      # [35, 4, 9]
+
+# removendo elementos da lista com pop, remove e clear
+lista_a = ['a', 'e', 'b', 'a', 'z']
+lista_a.pop(2)
+print(lista_a)      # ['a', 'e', 'a', 'z']
+lista_a.remove("z")
+print(lista_a)      # ['a', 'e', 'a']
+lista_a.remove("a")
+print(lista_a)      # ['e', 'a']
+lista_a.clear()
+print(lista_a)      # []
+
+# invertendo a sequência de elementos da lista
+lista_invertida = reversed(lista)
+print(lista)           # [10, 20, 30, 40, 10]
+print(lista_invertida) # [10, 40, 30, 20, 10]
+lista.reverse()
+print(lista)           # [10, 40, 30, 20, 10]
+
+# ordenando uma lista
+numeros = [3, 5, 2, 1, 4]
+numeros.sort()
+print(numeros) # [1, 2, 3, 4, 5]
+numeros.sort(reverse=True)
+print(numeros) # [5, 4, 3, 2, 1]
+numeros.sort(reverse=False)
+print(numeros) # [1, 2, 3, 4, 5]
+
+```
 
 ---
 
@@ -385,4 +530,15 @@ print( intersecao([3, 1, -1, 5, 9, 13], [0, 1, 5, 4, 5, 6, 5]) )
 print( intersecao([2, 4, 6, 8, 10], [1, 3, 5]) ) 
 ```
 ### **Parte 1**
-1. FIXME
+1. Dada a lista `lista = [5, 0, 3, 8, 9, 4, 1, 2]`, qual é a sublista resultante para cada um dos fatiamentos a seguir?
+   1. `lista[0:]`
+   2. `lista[:5]`
+   3. `lista[2:7]`
+   4. `lista[3:4]`
+   5. `lista[-7:-3]`
+   6. `lista[:15]`
+   7. `lista[::2]`
+   8. `lista[1::3]`
+   9. `lista[-2::-1]`
+
+2. 
