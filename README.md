@@ -583,6 +583,18 @@ print( lista_identica_sua_reversa([1, -1]) )
 | [3, 5, 9, 11]        | []                   |
 | [10, 20, 30, 40, 50] | [10, 20, 30, 40, 50] |
 
+**Código a completar**
+```python
+def remover_elementos_impares(lista):
+  pass
+
+# teste 1
+print( remover_elementos_impares([1, 2, 3, 4, 5, 6]) )
+# teste 2
+print( remover_elementos_impares([3, 5, 9, 11]) ) 
+# teste 3
+print( remover_elementos_impares([10, 20, 30, 40, 50]) )
+```
 
 5. Escreva uma função que tem como parâmetros duas listas A e B e que retorna uma nova lista contendo os elementos de A que não estão em B. Escreva pelo menos três testes da função no programa principal.
 
@@ -593,6 +605,20 @@ print( lista_identica_sua_reversa([1, -1]) )
 | Lista A: [1, 1, 1, 1, 2, 1, 1, 2]<br />Lista B: [1]          | [2, 2] |
 | Lista A: [1, 2, 1, 1, 2]<br />Lista B: [2, 1]                | [] |
 
+**Código a completar**
+```python
+def diferenca_simetrica(lista_a, lista_b):
+  pass
+
+# teste 1
+print( diferenca_simetrica([10, 20, 30, 40, 50], [15, 20, 25, 30]) )
+# teste 2
+print( diferenca_simetrica([10, 20, 30, 40, 50], [15, 25, 35]) ) 
+# teste 3
+print( diferenca_simetrica([1, 1, 1, 1, 2, 1, 1, 2], [1]) ) 
+# teste 4
+print( diferenca_simetrica([1, 2, 1, 1, 2], [2, 1]) ) 
+```
 
 6. Escreva um programa que tem como entrada quatro números inteiros e os imprime em ordem crescente. Use a ordenação de lista e imprima item a item usando `for`.
 
@@ -608,3 +634,14 @@ print( lista_identica_sua_reversa([1, -1]) )
 | --------------------- | ---------------- |
 | Lista A: ['mamão', 'cajú', 'banana']<br />Lista B: [5, 9, 1] | ['cajú', 'mamão', 'banana'] |
 | Lista A: ['bola', 'casa', 'rato', 'boné']<br />Lista B: [10, 20, 30, 40] | ['boné', 'rato', 'casa', 'bola'] |
+
+**Código a completar**
+```python
+def oredenar(lista_a, lista_b):
+  pass
+
+# teste 1
+print( oredenar(['mamão', 'cajú', 'banana'], [5, 9, 1]) ) # ['cajú', 'mamão', 'banana']
+# teste 2
+print( oredenar(['bola', 'casa', 'rato', 'boné'], [10, 20, 30, 40]) )  # ['boné', 'rato', 'casa', 'bola']
+```
