@@ -180,8 +180,13 @@ texto_invertido = ''.join(list(reversed(texto)))
 print(texto)            # saída: 'isso é um texto'
 print(texto_invertido)  # saída: 'otxet mu é ossi'
 ```
+
+
 ---
+
+
 ## Exercícios [Lista de exercícios](/lista.md)
+
 ### **Parte 1**
 1. Qual é a saída (impressão) do programa abaixo?
 
@@ -247,12 +252,38 @@ for i in range(len(la)):
 | [2, 5, 3]        | 10               |
 | [1, 0, 9, 1, 5]  | 16               |
 
+**Resposta**
+```python
+def somar_lista(L):
+  soma = 0
+  for i in L:
+    soma += i
+  return soma
+
+# teste 1
+print( somar_lista([2, 5, 3]) )
+# teste 2
+print( somar_lista([1, 0, 9, 1, 5]) ) 
+```
+
+
 7. Escreva uma função que tem uma lista como parâmetro e que retorna a média aritmética dos elementos dessa lista. Escreva pelo menos dois testes da função no programa principal.
 
 | Exemplo de lista | Retorno esperado |
 | ---------------- | ---------------- |
 | [4, 5, 3]        | 4.0              |
 | [1, 0, 9, 1, 5]  | 3.2              |
+
+**Código a completar**
+```python
+def calcular_media_aritmetica(lista):
+  pass
+
+# teste 1
+print( calcular_media_aritmetica([4, 5, 3]) )
+# teste 2
+print( calcular_media_aritmetica([1, 0, 9, 1, 5]) ) 
+```
 
 
 8. Escreva uma função que tem uma lista como parâmetro e que retorna a soma dos elementos divisíveis por 3. Escreva pelo menos dois testes da função no programa principal.
@@ -262,6 +293,18 @@ for i in range(len(la)):
 | [0, 6, -1, 12, 1] | 18.0             |
 | [0, 1, -1, 8]     | 0.0              |
 
+**Código a completar**
+```python
+def soma_dos_numeros_divisiveis_por_3(lista):
+  pass
+
+# teste 1
+print( soma_dos_numeros_divisiveis_por_3([0, 6, -1, 12, 1]) )
+# teste 2
+print( soma_dos_numeros_divisiveis_por_3([0, 1, -1, 8]) ) 
+```
+
+
 9. Escreva uma função que tem uma lista como parâmetro e que retorna uma nova lista contendo os elementos da primeira lista que são divisíveis por 5. Escreva pelo menos dois testes da função no programa principal.
 
 | Exemplo de lista  | Retorno esperado |
@@ -269,12 +312,36 @@ for i in range(len(la)):
 | [1, 1, 10, 15, 9] | [10, 15]         |
 | [9, 1, -1, 8]     | []               |
 
+**Código a completar**
+```python
+def criar_lista_com_itens_divisiveis_por_5(lista):
+  pass
+
+# teste 1
+print( criar_lista_com_itens_divisiveis_por_5([1, 1, 10, 15, 9]) )
+# teste 2
+print( criar_lista_com_itens_divisiveis_por_5([9, 1, -1, 8]) ) 
+```
+
+
 10. Escreva uma função que tem uma lista como parâmetro e que imprime os elementos pares dessa lista com seus respectivos índices. Escreva pelo menos dois testes da função no programa principal.
 
 | Exemplo de lista      | Retorno esperado |
 | --------------------- | ---------------- |
-| [2, 1, -1, 8]         |  |
+| [2, 1, -1, 8]         | <table style="margin: 0; border-collapse: collapse; border: none;"><tbody><tr><th>Elemento</th><th>Índice</th></tr><tr><th>-------</th><th>------</th></tr><tr><td>2</td><td>0</td></tr><tr><td>8</td><td>3</td></tr></tbody></table> |
 | [3, 1, -1, 5, 9, 13]  |  |
+
+**Código a completar**
+```python
+def imprimir_numeros_pares(lista):
+  pass
+
+# teste 1
+print( imprimir_numeros_pares([2, 1, -1, 8]) )
+# teste 2
+print( imprimir_numeros_pares([3, 1, -1, 5, 9, 13]) ) 
+```
+
 
 11. Escreva uma função que tem uma lista A como parâmetro e que retorna uma nova lista formada pelos dobros dos elementos de A. Escreva pelo menos dois testes da função no programa principal.
 
