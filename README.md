@@ -328,14 +328,16 @@ print( criar_lista_com_itens_divisiveis_por_5([9, 1, -1, 8]) )
 
 | Exemplo de lista      | Retorno esperado |
 | --------------------- | ---------------- |
-| [2, 1, -1, 8]         | <table style="margin: 0; border-collapse: collapse; border: none;"><tbody><tr><th>Elemento</th><th>Índice</th></tr><tr><th>-------</th><th>------</th></tr><tr><td>2</td><td>0</td></tr><tr><td>8</td><td>3</td></tr></tbody></table> |
-| [3, 1, -1, 5, 9, 13]  |  |
+| [2, 1, -1, 8]         | <pre>Exemplo Índice<br />------- ------<br />2       0<br />8       3</pre> |
+| [3, 1, -1, 5, 9, 13]  | <pre>Exemplo Índice<br />------- ------</pre> |
 
 **Código a completar**
 ```python
 def imprimir_numeros_pares(lista):
   pass
 
+print('Elemento\tÍndice')
+print('--------\t------')
 # teste 1
 print( imprimir_numeros_pares([2, 1, -1, 8]) )
 # teste 2
@@ -350,6 +352,18 @@ print( imprimir_numeros_pares([3, 1, -1, 5, 9, 13]) )
 | [2, 1, -1, 8]         | [4, 2, -2, 16]        |
 | [3, 1, -1, 5, 9, 13]  | [6, 2, -2, 10, 18,26] |
 
+**Código a completar**
+```python
+def criar_lista_dobrando_valor_dos_itens(lista):
+  pass
+
+# teste 1
+print( criar_lista_dobrando_valor_dos_itens([2, 1, -1, 8]) )
+# teste 2
+print( criar_lista_dobrando_valor_dos_itens([3, 1, -1, 5, 9, 13]) ) 
+```
+
+
 12. Escreva uma função que tem duas listas A e B como parâmetros e que retorna uma nova lista contendo os elementos presentes tanto em A como em B (interseção). Escreva pelo menos três testes da função no programa principal.
 
 | Exemplo de lista | Retorno esperado |
@@ -358,6 +372,17 @@ print( imprimir_numeros_pares([3, 1, -1, 5, 9, 13]) )
 | [3, 1, -1, 5, 9, 13]<br />[0, 1, 5, 4, 5, 6, 5] | [1, 5] |
 | [2, 4, 6, 8, 10]<br />[1, 3, 5]                 | []     |
 
+**Código a completar**
+```python
+def intersecao(lista_a, lista_b):
+  pass
 
+# teste 1
+print( intersecao([2, 1, -1, 8], [0, 2, 5, 6, 9, 1, 3]) )
+# teste 2
+print( intersecao([3, 1, -1, 5, 9, 13], [0, 1, 5, 4, 5, 6, 5]) ) 
+# teste 3
+print( intersecao([2, 4, 6, 8, 10], [1, 3, 5]) ) 
+```
 ### **Parte 1**
 1. FIXME
