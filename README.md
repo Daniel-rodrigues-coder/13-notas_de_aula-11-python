@@ -55,7 +55,6 @@
    - `reversed(lista)` : cria uma nova lista invertendo a sequência de elementos da lista
    - `lista.sort(reverse=Boolean)` : ordena a sequência de elementos da lista
 
-
 ### Exemplo de código em python
 
 Exemplo de lista e do uso da função `len`.
@@ -336,17 +335,17 @@ print(numeros) # [1, 2, 3, 4, 5]
 1. Qual é a saída (impressão) do programa abaixo?
 
 ```python
-L = [51, 8, 31, 11, 1, 56]
-i = 2
-print(L[0])
-print(L[3])
-print(L[i])
-print(L[i + 1])
-print(L[-1])
-print(L[-3])
-print(L[-i])
-print(L[L[4]])
-print(L[2] - L[-4])
+lista = [51, 8, 31, 11, 1, 56]
+indice = 2
+print(lista[0])
+print(lista[3])
+print(lista[indice])        # 2
+print(lista[indice + 1])    # 3
+print(lista[-1])
+print(lista[-3])
+print(lista[-indice])       # -1
+print(lista[ lista[4] ])    # lista[4] = 1
+print(lista[2] - lista[-4]) # lista[2] - lista[4] = 31 - 31 = 0
 ```
 
 2. Qual é a saída (impressão) do programa abaixo?
@@ -541,4 +540,71 @@ print( intersecao([2, 4, 6, 8, 10], [1, 3, 5]) )
    8. `lista[1::3]`
    9. `lista[-2::-1]`
 
-2. 
+2. Qual é a saída do programa a seguir?
+```python
+lista = [3, -6, 5, 0, 2]
+for i, elemento in enumerate(lista):
+  print(f'{elemento} ** {i} = {elemento ** i}')
+
+```
+
+3. Escreva uma função que tem uma lista como parâmetro e indica se essa lista é idêntica à sua reversão. Escreva pelo menos quatro testes da função no programa principal.
+
+| Exemplo de lista | Retorno esperado |
+| ---------------- | ---------------- |
+| [1, 2, 2, 1]     | True             |
+| []               | True             |
+| [3]              | True             |
+| [1, 2, 3]        | False            |
+| [1, -1]          | False            |
+
+**Código a completar**
+```python
+def lista_identica_sua_reversa(lista):
+  pass
+
+# teste 1
+print( lista_identica_sua_reversa([1, 2, 2, 1]) )
+# teste 2
+print( lista_identica_sua_reversa([]) ) 
+# teste 3
+print( lista_identica_sua_reversa([3]) )
+# teste 4
+print( lista_identica_sua_reversa([1, 2, 3]) ) 
+# teste 5
+print( lista_identica_sua_reversa([1, -1]) ) 
+```
+
+4. Escreva uma função que tem uma lista como parâmetro e que remove os elementos ímpares dessa lista. Escreva pelo menos três testes da função no programa principal.
+
+| Exemplo de lista | Retorno esperado |
+| ---------------- | ---------------- |
+| [1, 2, 3, 4, 5, 6]   | [2, 4, 6]            |
+| [3, 5, 9, 11]        | []                   |
+| [10, 20, 30, 40, 50] | [10, 20, 30, 40, 50] |
+
+
+5. Escreva uma função que tem como parâmetros duas listas A e B e que retorna uma nova lista contendo os elementos de A que não estão em B. Escreva pelo menos três testes da função no programa principal.
+
+| Exemplo de parâmetros | Retorno esperado |
+| --------------------- | ---------------- |
+| Lista A: [10, 20, 30, 40, 50]<br />Lista B: [15, 20, 25, 30] | [10, 40, 50] |
+| Lista A: [10, 20, 30, 40, 50]<br />Lista B: [15, 25, 35]     | [10, 20, 30, 40, 50] |
+| Lista A: [1, 1, 1, 1, 2, 1, 1, 2]<br />Lista B: [1]          | [2, 2] |
+| Lista A: [1, 2, 1, 1, 2]<br />Lista B: [2, 1]                | [] |
+
+
+6. Escreva um programa que tem como entrada quatro números inteiros e os imprime em ordem crescente. Use a ordenação de lista e imprima item a item usando `for`.
+
+| Exemplo de entrada | Saída esperada |
+| ------------------ | -------------- |
+| 5<br />0<br />1<br />-2 | -2 0 1 5  |
+| 1<br />3<br />1<br />2  | 1 1 2 3   |
+
+
+7. Escreva uma função que tem como parâmetros uma lista de strings A e uma lista de inteiros B, sendo que B representa a quantidade de ocorrências das palavras em A no respectivo índice. A função deve retornar uma cópia de A ordenada de forma decrescente com base nos valores presentes em B. Escreva pelo menos dois testes da função no programa principal.
+
+| Exemplo de parâmetros | Retorno esperado |
+| --------------------- | ---------------- |
+| Lista A: ['mamão', 'cajú', 'banana']<br />Lista B: [5, 9, 1] | ['cajú', 'mamão', 'banana'] |
+| Lista A: ['bola', 'casa', 'rato', 'boné']<br />Lista B: [10, 20, 30, 40] | ['boné', 'rato', 'casa', 'bola'] |
