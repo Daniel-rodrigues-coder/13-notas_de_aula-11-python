@@ -5,7 +5,8 @@
 - **Público alvo**: alunos da disciplina de **Introdução a lógica e programação** do curso de [Infoweb](https://diatinf.ifrn.edu.br/cursos/tecnico-em-informatica-para-internet/) na [DIATINF](https://diatinf.ifrn.edu.br/) no [CNAT-IFRN](https://portal.ifrn.edu.br/campus/natalcentral/)
 - **Professor**: [L A Minora](https://github.com/leonardo-minora/)
 - **Objetivo**:
-  1. FIXME
+  1. Apresentar lista como um tipo de variável com múltiplos valores
+  2. Apresentar operações básicas sobre listas
 
 ---
 ## Notas de aula 
