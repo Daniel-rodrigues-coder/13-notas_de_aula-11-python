@@ -1,7 +1,7 @@
 # Exercícios — Listas em Python
 
-> **Público alvo**: alunos da disciplina de Introdução a Lógica e Programação  
-> **Objetivo**: praticar o uso de listas para resolver problemas de programação  
+> **Público alvo**: alunos da disciplina de Introdução a Lógica e Programação
+> **Objetivo**: praticar o uso de listas para resolver problemas de programação
 > **Observação**: questões inspiradas em formatos recorrentes da **OBI (modalidade Programação)**.
 
 ---
@@ -22,7 +22,7 @@ Neste arquivo, cada questão foi reescrita nesse formato e com explicações mai
 ## Nível Fácil (20 questões) — referência: OBI Programação Nível 1
 
 ### 1. Soma da fila
-Você recebeu uma fila com `N` números inteiros. Seu programa deve somar todos os valores da lista e mostrar o resultado final.  
+Você recebeu uma fila com `N` números inteiros. Seu programa deve somar todos os valores da lista e mostrar o resultado final.
 Para resolver, percorra a lista inteira e acumule a soma em uma variável.
 
 **Entrada**
@@ -43,7 +43,7 @@ Saída
 ```
 
 ### 2. Maior e menor
-Dada uma lista de números inteiros, descubra qual é o menor valor e qual é o maior valor.  
+Dada uma lista de números inteiros, descubra qual é o menor valor e qual é o maior valor.
 A ideia é percorrer a lista comparando os elementos com os melhores valores encontrados até o momento.
 
 **Entrada**
@@ -64,7 +64,7 @@ Saída
 ```
 
 ### 3. Contagem de pares
-Seu programa deve contar quantos números pares existem na lista.  
+Seu programa deve contar quantos números pares existem na lista.
 Lembre-se de que um número é par quando o resto da divisão por 2 é igual a 0.
 
 **Entrada**
@@ -85,7 +85,7 @@ Saída
 ```
 
 ### 4. Acima da média
-Primeiro calcule a média aritmética dos valores da lista. Depois conte quantos elementos são maiores que essa média.  
+Primeiro calcule a média aritmética dos valores da lista. Depois conte quantos elementos são maiores que essa média.
 Essa questão é útil para praticar duas passagens pela lista: uma para somar e outra para contar.
 
 **Entrada**
@@ -106,7 +106,7 @@ Saída
 ```
 
 ### 5. Inversão simples
-Você deve imprimir os elementos da lista na ordem inversa.  
+Você deve imprimir os elementos da lista na ordem inversa.
 O primeiro elemento da saída será o último da entrada, e assim por diante.
 
 **Entrada**
@@ -127,7 +127,7 @@ Saída
 ```
 
 ### 6. Rotação à esquerda
-Faça uma rotação de 1 posição para a esquerda.  
+Faça uma rotação de 1 posição para a esquerda.
 Isso significa que o primeiro elemento vai para o final, e todos os outros avançam uma posição para a esquerda.
 
 **Entrada**
@@ -148,7 +148,7 @@ Saída
 ```
 
 ### 7. Rotação à direita
-Faça uma rotação de 1 posição para a direita.  
+Faça uma rotação de 1 posição para a direita.
 Nesse caso, o último elemento passa a ser o primeiro da lista.
 
 **Entrada**
@@ -169,7 +169,7 @@ Saída
 ```
 
 ### 8. Presença de valor
-Dado um valor `X`, diga se ele aparece ou não na lista.  
+Dado um valor `X`, diga se ele aparece ou não na lista.
 Se o valor existir em pelo menos uma posição, a resposta é positiva.
 
 **Entrada**
@@ -192,7 +192,7 @@ SIM
 ```
 
 ### 9. Primeira ocorrência
-Dado um valor `X`, descubra em qual índice ele aparece pela primeira vez.  
+Dado um valor `X`, descubra em qual índice ele aparece pela primeira vez.
 Se ele não aparecer na lista, imprima `-1`.
 
 **Entrada**
@@ -215,7 +215,7 @@ Saída
 ```
 
 ### 10. Última ocorrência
-Agora você deve encontrar a última posição em que `X` aparece na lista.  
+Agora você deve encontrar a última posição em que `X` aparece na lista.
 Se `X` não existir na lista, a saída também deve ser `-1`.
 
 **Entrada**
@@ -238,7 +238,7 @@ Saída
 ```
 
 ### 11. Contagem de X
-Conte quantas vezes o valor `X` aparece na lista.  
+Conte quantas vezes o valor `X` aparece na lista.
 Mesmo que ele apareça muitas vezes, a saída deve ser apenas a quantidade total.
 
 **Entrada**
@@ -261,7 +261,7 @@ Saída
 ```
 
 ### 12. Troca de sinal
-Crie uma nova lista em que cada valor seja substituído pelo seu oposto.  
+Crie uma nova lista em que cada valor seja substituído pelo seu oposto.
 Ou seja, números positivos viram negativos, negativos viram positivos e zero continua zero.
 
 **Entrada**
@@ -282,7 +282,7 @@ Saída
 ```
 
 ### 13. Zerar negativos
-Percorra a lista e substitua todos os números negativos por `0`.  
+Percorra a lista e substitua todos os números negativos por `0`.
 Os demais valores devem ser mantidos exatamente como estavam.
 
 **Entrada**
@@ -303,7 +303,7 @@ Saída
 ```
 
 ### 14. Dobrar pares
-Crie uma nova lista em que apenas os números pares sejam multiplicados por 2.  
+Crie uma nova lista em que apenas os números pares sejam multiplicados por 2.
 Os números ímpares devem permanecer iguais.
 
 **Entrada**
@@ -324,7 +324,7 @@ Saída
 ```
 
 ### 15. Remover repetidos (ordem mantida)
-Gere uma nova lista sem elementos repetidos, mas mantendo a ordem da primeira vez em que cada valor apareceu.  
+Gere uma nova lista sem elementos repetidos, mas mantendo a ordem da primeira vez em que cada valor apareceu.
 Se um número aparecer várias vezes, apenas a primeira ocorrência deve ficar.
 
 **Entrada**
@@ -345,7 +345,7 @@ Saída
 ```
 
 ### 16. Interseção simples
-Você recebeu duas listas `A` e `B`.  
+Você recebeu duas listas `A` e `B`.
 Monte uma nova lista contendo os valores que aparecem nas duas listas, sem repetir elementos na resposta.
 
 **Entrada**
@@ -371,7 +371,7 @@ Saída
 ```
 
 ### 17. Diferença simples
-Dadas duas listas `A` e `B`, imprima os elementos de `A` que não aparecem em `B`.  
+Dadas duas listas `A` e `B`, imprima os elementos de `A` que não aparecem em `B`.
 A ordem dos elementos deve ser a mesma da lista `A`.
 
 **Entrada**
@@ -397,7 +397,7 @@ Saída
 ```
 
 ### 18. Prefixos acumulados
-Construa uma nova lista em que cada posição guarda a soma de todos os elementos desde o início até aquele ponto.  
+Construa uma nova lista em que cada posição guarda a soma de todos os elementos desde o início até aquele ponto.
 Por exemplo, a terceira posição da nova lista deve guardar a soma dos três primeiros valores da lista original.
 
 **Entrada**
@@ -418,7 +418,7 @@ Saída
 ```
 
 ### 19. Maior diferença entre vizinhos
-Compare cada elemento com o próximo da lista e calcule a diferença absoluta entre eles.  
+Compare cada elemento com o próximo da lista e calcule a diferença absoluta entre eles.
 Seu programa deve informar a maior dessas diferenças.
 
 **Entrada**
@@ -439,7 +439,7 @@ Saída
 ```
 
 ### 20. Lista palíndroma
-Uma lista é chamada de palíndroma quando ela é igual à sua reversa.  
+Uma lista é chamada de palíndroma quando ela é igual à sua reversa.
 Seu programa deve verificar se isso acontece.
 
 **Entrada**
@@ -464,7 +464,7 @@ SIM
 ## Nível Médio (30 questões) — referência: OBI Programação Nível 2
 
 ### 1. Moda com desempate
-A moda é o valor que mais aparece na lista.  
+A moda é o valor que mais aparece na lista.
 Se houver empate entre dois ou mais valores, escolha o menor deles.
 
 **Entrada**
@@ -485,7 +485,7 @@ Saída
 ```
 
 ### 2. Segundo maior distinto
-Encontre o segundo maior valor diferente da lista.  
+Encontre o segundo maior valor diferente da lista.
 Se todos os valores forem iguais, imprima `NAO EXISTE`.
 
 **Entrada**
@@ -506,7 +506,7 @@ Saída
 ```
 
 ### 3. Segmento crescente máximo
-Percorra a lista e descubra o tamanho do maior trecho contíguo em que cada valor é maior que o anterior.  
+Percorra a lista e descubra o tamanho do maior trecho contíguo em que cada valor é maior que o anterior.
 Os elementos desse trecho precisam estar lado a lado.
 
 **Entrada**
@@ -527,7 +527,7 @@ Saída
 ```
 
 ### 4. Segmento não decrescente máximo
-Agora o trecho pode manter valores iguais ou crescer.  
+Agora o trecho pode manter valores iguais ou crescer.
 Seu objetivo é encontrar o maior segmento contíguo em que cada elemento seja maior ou igual ao anterior.
 
 **Entrada**
@@ -548,7 +548,7 @@ Saída
 ```
 
 ### 5. Remoção de picos
-Um elemento é um pico se for maior que o vizinho da esquerda e maior que o vizinho da direita.  
+Um elemento é um pico se for maior que o vizinho da esquerda e maior que o vizinho da direita.
 Considere apenas elementos que têm dois vizinhos. Remova todos os picos e imprima a lista restante.
 
 **Entrada**
@@ -569,7 +569,7 @@ Saída
 ```
 
 ### 6. Compressão por frequência
-Dado um inteiro `K`, cada valor pode aparecer no máximo `K` vezes na lista de saída.  
+Dado um inteiro `K`, cada valor pode aparecer no máximo `K` vezes na lista de saída.
 Se um número aparecer mais vezes, mantenha apenas as primeiras `K` ocorrências.
 
 **Entrada**
@@ -590,7 +590,7 @@ Saída
 ```
 
 ### 7. Par com soma alvo
-Verifique se existem dois elementos diferentes da lista cuja soma seja exatamente `S`.  
+Verifique se existem dois elementos diferentes da lista cuja soma seja exatamente `S`.
 Você precisa dizer apenas se existe ou não pelo menos um par válido.
 
 **Entrada**
@@ -611,7 +611,7 @@ SIM
 ```
 
 ### 8. Dois índices da soma
-Semelhante à questão anterior, mas agora você deve informar os índices de um par `i` e `j`, com `i < j`, cuja soma seja `S`.  
+Semelhante à questão anterior, mas agora você deve informar os índices de um par `i` e `j`, com `i < j`, cuja soma seja `S`.
 Se houver vários pares possíveis, pode imprimir qualquer um deles.
 
 **Entrada**
@@ -632,7 +632,7 @@ Saída
 ```
 
 ### 9. Três valores da soma
-Agora a pergunta é se existe uma trinca de elementos diferentes cuja soma seja `S`.  
+Agora a pergunta é se existe uma trinca de elementos diferentes cuja soma seja `S`.
 Seu programa não precisa mostrar a trinca, apenas dizer se ela existe.
 
 **Entrada**
@@ -653,7 +653,7 @@ SIM
 ```
 
 ### 10. Sublista de soma S
-Uma sublista contígua é um trecho formado por elementos consecutivos da lista.  
+Uma sublista contígua é um trecho formado por elementos consecutivos da lista.
 Verifique se existe algum trecho cuja soma seja exatamente `S`.
 
 **Entrada**
@@ -694,7 +694,7 @@ Saída
 ```
 
 ### 12. Produto máximo de dois elementos
-Escolha dois elementos distintos da lista de forma que o produto entre eles seja o maior possível.  
+Escolha dois elementos distintos da lista de forma que o produto entre eles seja o maior possível.
 Lembre-se de que dois números negativos também podem gerar um produto grande.
 
 **Entrada**
@@ -735,7 +735,7 @@ Saída
 ```
 
 ### 14. Mesclagem ordenada
-Você receberá duas listas já ordenadas em ordem crescente.  
+Você receberá duas listas já ordenadas em ordem crescente.
 Seu programa deve intercalar os elementos para formar uma única lista também ordenada.
 
 **Entrada**
@@ -760,7 +760,7 @@ Saída
 ```
 
 ### 15. Junção alternada
-Misture os elementos das duas listas alternando um elemento de `A`, depois um de `B`, e assim por diante.  
+Misture os elementos das duas listas alternando um elemento de `A`, depois um de `B`, e assim por diante.
 Quando uma lista acabar, acrescente o restante da outra no final.
 
 **Entrada**
@@ -785,7 +785,7 @@ Saída
 ```
 
 ### 16. Rotação por K posições
-Rotacione circularmente a lista `K` posições para a direita.  
+Rotacione circularmente a lista `K` posições para a direita.
 Se `K` for maior que `N`, use apenas o efeito equivalente dentro do tamanho da lista.
 
 **Entrada**
@@ -806,7 +806,7 @@ Saída
 ```
 
 ### 17. Eliminação em rodada
-Coloque os elementos da lista em fila circular e remova repetidamente cada segundo elemento até sobrar apenas um.  
+Coloque os elementos da lista em fila circular e remova repetidamente cada segundo elemento até sobrar apenas um.
 Seu programa deve informar qual valor resta no final.
 
 **Entrada**
@@ -827,7 +827,7 @@ Saída
 ```
 
 ### 18. Fila de atendimento
-Você deve simular uma fila.  
+Você deve simular uma fila.
 Haverá operações de entrada (`ENTRA x`) e saída (`SAI`). Ao final, mostre o estado da fila.
 
 **Entrada**
@@ -853,7 +853,7 @@ Saída
 ```
 
 ### 19. Pontuação acumulada
-Uma lista representa ganhos e perdas em sequência.  
+Uma lista representa ganhos e perdas em sequência.
 Para cada prefixo da lista, calcule a soma acumulada e determine o maior saldo já alcançado.
 
 **Entrada**
@@ -874,7 +874,7 @@ Saída
 ```
 
 ### 20. Sublista de soma máxima
-Entre todas as sublistas contíguas possíveis, encontre a que possui a maior soma total.  
+Entre todas as sublistas contíguas possíveis, encontre a que possui a maior soma total.
 Seu programa deve imprimir apenas esse valor máximo.
 
 **Entrada**
@@ -895,7 +895,7 @@ Saída
 ```
 
 ### 21. Janela de tamanho fixo
-Dado um tamanho `W`, observe todas as sublistas contíguas de tamanho exatamente `W`.  
+Dado um tamanho `W`, observe todas as sublistas contíguas de tamanho exatamente `W`.
 Seu programa deve descobrir qual delas tem a maior soma.
 
 **Entrada**
@@ -916,7 +916,7 @@ Saída
 ```
 
 ### 22. Empate em votação
-Cada número da lista representa um voto para um candidato identificado por um ID inteiro.  
+Cada número da lista representa um voto para um candidato identificado por um ID inteiro.
 Descubra o vencedor. Se houver empate na maior quantidade de votos, imprima `EMPATE`.
 
 **Entrada**
@@ -937,7 +937,7 @@ EMPATE
 ```
 
 ### 23. Classificação por notas
-Cada competidor tem uma nota.  
+Cada competidor tem uma nota.
 Ordene os competidores por nota decrescente e, em caso de empate, pelo menor índice original.
 
 **Entrada**
@@ -958,7 +958,7 @@ Saída
 ```
 
 ### 24. Inversão parcial
-Você deve inverter apenas o trecho da lista entre os índices `L` e `R`, inclusive.  
+Você deve inverter apenas o trecho da lista entre os índices `L` e `R`, inclusive.
 Os demais elementos devem continuar nas mesmas posições.
 
 **Entrada**
@@ -979,7 +979,7 @@ Saída
 ```
 
 ### 25. Movimento de bloco
-Remova da lista o bloco entre os índices `L` e `R` e insira esse bloco imediatamente após a posição `P`.  
+Remova da lista o bloco entre os índices `L` e `R` e insira esse bloco imediatamente após a posição `P`.
 Considere que `P` está fora do intervalo removido.
 
 **Entrada**
@@ -1000,7 +1000,7 @@ Saída
 ```
 
 ### 26. Distância entre repetidos
-Se um valor aparece mais de uma vez, a distância entre duas ocorrências pode ser medida pela diferença entre seus índices.  
+Se um valor aparece mais de uma vez, a distância entre duas ocorrências pode ser medida pela diferença entre seus índices.
 Seu programa deve encontrar a menor distância entre duas ocorrências iguais.
 
 **Entrada**
@@ -1022,7 +1022,7 @@ Saída
 ```
 
 ### 27. Verificação de permutação
-Determine se a lista é uma permutação dos números de `1` até `N`.  
+Determine se a lista é uma permutação dos números de `1` até `N`.
 Isso significa que todos esses números aparecem exatamente uma vez.
 
 **Entrada**
@@ -1043,7 +1043,7 @@ SIM
 ```
 
 ### 28. Reconstrução por diferenças
-Você conhece o primeiro valor da lista e também as diferenças entre elementos consecutivos.  
+Você conhece o primeiro valor da lista e também as diferenças entre elementos consecutivos.
 Com essas informações, reconstrua a lista original.
 
 **Entrada**
@@ -1066,7 +1066,7 @@ Saída
 ```
 
 ### 29. Balanceamento de cargas
-Cada posição da lista representa a carga de uma máquina.  
+Cada posição da lista representa a carga de uma máquina.
 Você pode mover uma unidade de carga apenas entre máquinas vizinhas. Descubra o número mínimo de movimentos para deixar todas com a mesma carga. Se isso não for possível, imprima `-1`.
 
 **Entrada**
@@ -1087,7 +1087,7 @@ Saída
 ```
 
 ### 30. Empacotamento guloso
-Você recebeu uma sequência de pesos e uma capacidade máxima `C`.  
+Você recebeu uma sequência de pesos e uma capacidade máxima `C`.
 Percorra a lista na ordem dada, formando grupos consecutivos. Sempre que adicionar o próximo item ultrapassar `C`, comece um novo grupo.
 
 **Entrada**
@@ -1112,7 +1112,7 @@ Saída
 ## Nível Difícil (10 questões) — referência: OBI Programação Sênior
 
 ### 1. Contagem de inversões
-Um par `(i, j)` forma uma inversão quando `i < j` e `A[i] > A[j]`.  
+Um par `(i, j)` forma uma inversão quando `i < j` e `A[i] > A[j]`.
 Seu programa deve contar quantos pares assim existem na lista.
 
 **Entrada**
@@ -1133,7 +1133,7 @@ Saída
 ```
 
 ### 2. Maior subsequência crescente (LIS)
-Uma subsequência não precisa ser contígua, mas deve manter a ordem original dos elementos.  
+Uma subsequência não precisa ser contígua, mas deve manter a ordem original dos elementos.
 Descubra o tamanho da maior subsequência estritamente crescente.
 
 **Entrada**
@@ -1154,7 +1154,7 @@ Saída
 ```
 
 ### 3. Subsequência bitônica máxima
-Uma subsequência bitônica primeiro cresce e depois decresce.  
+Uma subsequência bitônica primeiro cresce e depois decresce.
 Seu programa deve encontrar o maior tamanho possível de uma subsequência desse tipo.
 
 **Entrada**
@@ -1175,7 +1175,7 @@ Saída
 ```
 
 ### 4. K-ésimo menor em janela
-Para cada janela contígua de tamanho `W`, determine qual é o `K`-ésimo menor elemento dentro dessa janela.  
+Para cada janela contígua de tamanho `W`, determine qual é o `K`-ésimo menor elemento dentro dessa janela.
 Depois imprima as respostas de todas as janelas, na ordem em que elas aparecem.
 
 **Entrada**
@@ -1196,7 +1196,7 @@ Saída
 ```
 
 ### 5. Mediana deslizante
-Em cada janela contígua de tamanho `W`, calcule a mediana.  
+Em cada janela contígua de tamanho `W`, calcule a mediana.
 Considere que `W` será ímpar, de modo que a mediana é o valor central após ordenar os elementos da janela.
 
 **Entrada**
@@ -1217,7 +1217,7 @@ Saída
 ```
 
 ### 6. Soma máxima com restrição de distância
-Escolha elementos da lista para maximizar a soma total, mas dois elementos escolhidos não podem estar a menos de `D` posições um do outro.  
+Escolha elementos da lista para maximizar a soma total, mas dois elementos escolhidos não podem estar a menos de `D` posições um do outro.
 Seu programa deve imprimir apenas a melhor soma possível.
 
 **Entrada**
@@ -1238,7 +1238,7 @@ Saída
 ```
 
 ### 7. Partição em K segmentos
-Divida a lista em `K` segmentos contíguos não vazios.  
+Divida a lista em `K` segmentos contíguos não vazios.
 Entre todas as formas de particionar, escolha aquela em que a maior soma entre os segmentos seja a menor possível.
 
 **Entrada**
@@ -1259,7 +1259,7 @@ Saída
 ```
 
 ### 8. Número de sublistas com soma em intervalo [L, R]
-Conte quantas sublistas contíguas possuem soma entre `L` e `R`, inclusive.  
+Conte quantas sublistas contíguas possuem soma entre `L` e `R`, inclusive.
 A soma da sublista deve estar dentro do intervalo dado.
 
 **Entrada**
@@ -1280,7 +1280,7 @@ Saída
 ```
 
 ### 9. Atualização e consulta dinâmica
-Você receberá uma lista inicial e depois várias operações.  
+Você receberá uma lista inicial e depois várias operações.
 Algumas operações alteram o valor de uma posição, e outras pedem a soma dos elementos em um intervalo.
 
 **Entrada**
@@ -1310,7 +1310,7 @@ Saída
 ```
 
 ### 10. Menor rotação lexicográfica
-Considere todas as rotações circulares possíveis da lista.  
+Considere todas as rotações circulares possíveis da lista.
 Seu programa deve informar o índice inicial da rotação que gera a menor lista em ordem lexicográfica.
 
 **Entrada**
