@@ -178,7 +178,7 @@ Se o valor existir em pelo menos uma posição, a resposta é positiva.
 - A terceira linha contém o valor `X`.
 
 **Saída**
-- Imprima `SIM` se `X` estiver na lista e `NAO` caso contrário.
+- Imprima `SIM` se `X` estiver na lista e `NÃO` caso contrário.
 
 **Exemplo**
 ```text
@@ -447,7 +447,7 @@ Seu programa deve verificar se isso acontece.
 - A segunda linha contém `N` inteiros.
 
 **Saída**
-- Imprima `SIM` se a lista for palíndroma e `NAO` caso contrário.
+- Imprima `SIM` se a lista for palíndroma e `NÃO` caso contrário.
 
 **Exemplo**
 ```text
@@ -486,14 +486,14 @@ Saída
 
 ### 2. Segundo maior distinto
 Encontre o segundo maior valor diferente da lista.
-Se todos os valores forem iguais, imprima `NAO EXISTE`.
+Se todos os valores forem iguais, imprima `NÃO EXISTE`.
 
 **Entrada**
 - A primeira linha contém `N`.
 - A segunda linha contém `N` inteiros.
 
 **Saída**
-- Imprima o segundo maior valor distinto, ou `NAO EXISTE`.
+- Imprima o segundo maior valor distinto, ou `NÃO EXISTE`.
 
 **Exemplo**
 ```text
@@ -598,7 +598,7 @@ Você precisa dizer apenas se existe ou não pelo menos um par válido.
 - A segunda linha contém `N` inteiros.
 
 **Saída**
-- Imprima `SIM` se existir tal par e `NAO` caso contrário.
+- Imprima `SIM` se existir tal par e `NÃO` caso contrário.
 
 **Exemplo**
 ```text
@@ -640,7 +640,7 @@ Seu programa não precisa mostrar a trinca, apenas dizer se ela existe.
 - A segunda linha contém `N` inteiros.
 
 **Saída**
-- Imprima `SIM` ou `NAO`.
+- Imprima `SIM` ou `NÃO`.
 
 **Exemplo**
 ```text
@@ -661,7 +661,7 @@ Verifique se existe algum trecho cuja soma seja exatamente `S`.
 - A segunda linha contém `N` inteiros.
 
 **Saída**
-- Imprima `SIM` se existir pelo menos uma sublista contígua com soma `S`, ou `NAO`.
+- Imprima `SIM` se existir pelo menos uma sublista contígua com soma `S`, ou `NÃO`.
 
 **Exemplo**
 ```text
@@ -1030,7 +1030,7 @@ Isso significa que todos esses números aparecem exatamente uma vez.
 - A segunda linha contém `N` inteiros.
 
 **Saída**
-- Imprima `SIM` se for uma permutação de `1` até `N`, ou `NAO`.
+- Imprima `SIM` se for uma permutação de `1` até `N`, ou `NÃO`.
 
 **Exemplo**
 ```text
